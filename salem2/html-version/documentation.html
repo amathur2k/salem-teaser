@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Documentation. Round - Responsive, Fullscreen, Under Construction Template.</title>
+    <style type="text/css">
+
+        body {
+            font: normal 13px/20px Tahoma, Geneva, sans-serif;
+            color: #000;
+            background-color: #fcfcfc;
+            padding: 0 0 200px 0;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 39px;
+            line-height: 1.3em;
+        }
+
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #d5d5d5;
+            line-height: 2em;
+            padding-top: 1em;
+        }
+
+        h3 {
+            font-size: 18px;
+            border-bottom: 1px solid #d5d5d5;
+            line-height: 2em;
+            padding-top: 1em;
+        }
+
+        h4 {
+            font-size: 16px;
+            padding-top: 1em;
+            font-weight: bold;
+        }
+
+        h3 a {
+            font-size: 13px;
+            padding-left: 5px;
+        }
+
+        h4 > a {
+            font-size: 12px;
+            font-weight: normal;
+            padding-left: 5px;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:active {
+            color: #3366cc;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0 0 0 30px;
+        }
+
+        ol {
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        ol	li {
+            padding-bottom: 1em;
+        }
+
+        ul li {
+            padding-bottom: 0.5em;
+            list-style-type: circle;
+        }
+
+        li > ul {
+            padding-top: 0.5em;
+        }
+
+        #page {
+            padding-top: 50px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .red {
+            color: #c92d0a;
+        }
+
+        .blue {
+            color: #0040e4;
+        }
+
+        .green {
+            color: #519400;
+        }
+
+        code {
+            background: none repeat scroll 0 0 #f1f1f1;
+            display: block;
+            padding: 12px 15px;
+            margin-bottom: 1em;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.ps {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font: normal 21px/25px "Times New Roman", Times, serif;
+            color: #FFF;
+            background-color: #316ac5;
+            padding: 8px 4px;
+        }
+
+        blockquote {
+            background-color: #cccccc;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<a name="top"></a>
+
+<div id="page">
+<h1>Round - Under Construction Template.</h1>
+<h2>Contents</h2>
+<ul>
+    <li><a href="#p1">Installation.</a></li>
+    <li><a href="#p10">HTML structure.</a></li>
+    <li>
+        <a href="#p14">Customizing Template.</a>
+        <ul>
+            <li><a href="#p14-1">Color scheme. Logo.</a></li>
+            <li><a href="#p14-2">Countdown.</a></li>
+            <li><a href="#p14-3">Contact Form.</a></li>
+            <li><a href="#p14-4">Subscribe Form.</a></li>
+            <li><a href="#p14-5">How to change font-family.</a></li>
+        </ul>
+    </li>
+    <li><a href="#p3">Customizing Fullscreen Slider.</a></li>
+    <li><a href="#p3-6">Fullscreen YouTube.</a></li>
+    <li><a href="#p11">HTML5 Audio, Video in all major browsers and devices.</a>
+        <ul>
+            <li><a href="#p11-1">About library.</a></li>
+            <li><a href="#p11-2">Some Free Audio and Video Converters.</a></li>
+            <li><a href="#p11-3">Installation. Setup MIME-types.</a></li>
+            <li><a href="#p11-4">How to activate Fullscreen Video Background.</a></li>
+            <li><a href="#p11-5">How to activate Music.</a></li>
+        </ul>
+    </li>
+    <li><a href="#p2">Customizing About Us, Portfolio, Contact Us.</a></li>
+    <li><a href="#p4">Updating portfolio.</a></li>
+    <li><a href="#p5">Customizing Google Map.</a></li>
+    <li><a href="#p6">Editing social network icons.</a></li>
+    <li><a href="#p7">List of the subscribers.</a></li>
+    <li><a href="#p12">How to make a clock?</a></li>
+    <li><a href="#p15">How to remove the countdown block?</a></li>
+    <li><a href="#p8">Sources and Credits.</a></li>
+    <li><a href="#p9">Support.</a></li>
+</ul>
+<p><a name="p1"></a></p>
+
+<h3>Installation <a href="#top">Top</a></h3>
+<ol>
+    <li>Please, look archive in the folder <strong>html-version</strong>. You need unzip this archive.</li>
+    <li><a href="#p11">You need to customize the template.</a></li>
+    <li>After all the changes, you must upload all the files on your hosting.</li>
+</ol>
+
+
+<p><a name="p10"></a></p>
+
+<h3>HTML structure. <a href="#top">Top</a></h3>
+
+<p>To find the necessary code, open the <strong>index.html</strong> file in the editor and use search. Below are listed the main blocks.</p>
+<code>
+    &lt;!-- BEGIN #audio-panel-wrap --&gt;<br>
+    ...<br>
+    &lt;!-- BEGIN #audio-panel-wrap --&gt;<br>
+    <br>
+    &lt;!-- BEGIN #fullscreen-video --&gt;<br>
+    ...<br>
+    &lt;!-- END #fullscreen-video --&gt;<br>
+    <br>
+    &lt;!-- BEGIN #fullscreen-YouTube --&gt;<br>
+    ...<br>
+    &lt;!-- END #fullscreen-YouTube --&gt;<br>
+    <br>
+    &lt;!-- BEGIN #fullscreen-slider --&gt;<br> &lt;section id="fullscreen-slider"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #fullscreen-slider --&gt; <br>
+    <!--
+    <br> &lt;!-- BEGIN #twitter-top for mobile version --&gt;<br> &lt;section id="twitter-top"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #twitter-top for mobile version --&gt; <br>
+    -->
+    <br> &lt;!-- BEGIN #logo --&gt;<br> &lt;header id="logo"&gt;<br> ...<br> &lt;/header&gt;<br> &lt;!-- END #logo --&gt; <br> <br> &lt;!-- BEGIN #countdown --&gt;<br> &lt;section id="countdown"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #countdown --&gt; <br>
+    <br> &lt;!-- BEGIN #subscribe --&gt;<br> &lt;section id="subscribe"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #subscribe --&gt; <br>
+    <br> &lt;!-- BEGIN #player for slider --&gt;<br> &lt;section id="player"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #player for slider --&gt;<br> <br> <br> &lt;!-- BEGIN menu Bubbles --&gt;<br> &lt;nav id="menu-style-a"&gt;<br> ...<br> &lt;/nav&gt;<br> &lt;!-- END menu Bubbles --&gt;<br>
+    <br>
+    <br> &lt;!-- BEGIN menu for mobile version --&gt;<br> &lt;nav id="menu-style-b"&gt;<br> &lt;ul class="menu"&gt;<br> ...<br>  &lt;/ul&gt;<br> &lt;/nav&gt;<br> &lt;!-- END menu for mobile version --&gt;
+    <br> <br> &lt;!-- BEGIN #subscribe-bottom for mobile version--&gt;<br> &lt;section id="subscribe-bottom"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END #subscribe-bottom for mobile version--&gt;<br> <br>
+    <br> &lt;!-- BEGIN Block #about-us-block --&gt;<br> &lt;section class="page" id="about-us-block"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END Block #about-us-block --&gt; <br> <br> &lt;!-- BEGIN Block #portfolio-block --&gt;<br> &lt;section class="page" id="portfolio-block"&gt;<br> ...<br> &nbsp;&nbsp;&nbsp;&lt;!-- BEGIN Portfolio --&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="wrap-portfolio"&gt;<br> &nbsp;&nbsp;&nbsp;...<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;!-- END Portfolio --&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END Block #portfolio-block --&gt;<br>
+    <br>
+    <br> &lt;!-- BEGIN Block #contact-us-block --&gt;<br> &lt;section class="page" id="contact-us-block"&gt;<br> ...<br> &nbsp;&nbsp;&nbsp;&lt;!--BEGIN google map --&gt;<br> &nbsp;&nbsp;&nbsp;...<br> &nbsp;&nbsp;&nbsp;&lt;!--END google map --&gt;<br>
+    <br> <br> &nbsp;&nbsp;&nbsp;&lt;!--BEGIN Our Address --&gt;<br> &nbsp;&nbsp;&nbsp;&lt;section id="address"&gt;<br> &nbsp;&nbsp;&nbsp;...<br> &nbsp;&nbsp;&nbsp;&lt;/section&gt;<br> &nbsp;&nbsp;&nbsp;&lt;!--END Our Address --&gt;<br> <br>
+    <br> &nbsp;&nbsp;&nbsp;&lt;!--BEGIN Contact Form --&gt;<br> &nbsp;&nbsp;&nbsp;&lt;section id="contact-from"&gt;<br> &nbsp;&nbsp;&nbsp;...<br> &nbsp;&nbsp;&nbsp;&lt;/section&gt;<br> &nbsp;&nbsp;&nbsp;&lt;!--END Contact Form --&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!-- END Block #contact-us-block --&gt;
+    <br> <br> &lt;!--BEGIN #social-icons --&gt;<br> &lt;ul class="social-icons"&gt;<br> ...<br> &lt;/ul&gt;<br> &lt;!--END #social-icons --&gt;<br> <br>
+    <!--
+    <br> &lt;!--BEGIN #twitter-bottom --&gt;<br> &lt;section id="twitter-bottom"&gt;<br> ...<br> &lt;/section&gt;<br> &lt;!--END #twitter-bottom --&gt;<br>
+    -->
+</code>
+
+<p><a name="p14"></a></p>
+<h3>Customizing Template. <a href="#top">Top</a></h3>
+<p>Please keep your styles in the separate file <strong>custom.css</strong>, you can save your styles when the template updated. </p>
+<p>Now you need to customize the template. Use any HTML editor to configure them. As an example, the data to be edited are marked <strong class="red">red</strong> below.</p>
+
+<p><a name="p14-1"></a>
+<h4>Color scheme. Logo.<a href="#top">Top</a></h4>
+<p>Please, open the <strong><strong>index.html</strong></strong> file. As an example, the data to be edited are marked <strong class="red">red</strong> below.</p>
+<ul>
+    <li><strong>Color scheme.</strong>
+        <p>Use the search and find <strong>color_green.css</strong>, replace it to your value.</p>
+        <code> &lt;link rel="stylesheet" type="text/css" href="css/<span class="red">color_green.css</span>" /&gt;</code>
+        <p><span class="red">Attention.</span> Valid values for the filename of the color scheme:</p>
+        <ul>
+            <li>color_blue.css</li>
+            <li>color_green.css</li>
+            <li>color_orange.css</li>
+            <li>color_red.css</li>
+            <li>color_rosy.css</li>
+            <li>color_dark.css</li>
+            <li>color_light.css</li>
+        </ul>
+    </li>
+    <li><strong>Logo.</strong>
+        <p>Use the search and find the <strong>id="logo"</strong> in the file <strong>index.html</strong>. After that put url to your logo file.</p>
+        <p><strong>For example.</strong></p>
+        <code>
+            &lt;img src="<span class="red">images/logo.png</span>" title="" /&gt;
+        </code>
+    </li>
+</ul>
+
+<p><a name="p14-2"></a>
+<h4>Countdown. <a href="#top">Top</a></h4>
+<p>Please, open the <strong><strong>_variables.js</strong></strong> file in the folder <strong>js</strong> and put your values. As an example, the data to be edited are marked <strong class="red">red</strong> below.</p>
+<ul>
+    <li>
+        <strong>Countdown.</strong>
+        <p>Use the search and find <strong>dateOpen</strong> and enter your value.</p>
+        <p><strong>For example, site will open at 19:40 28 January 2015 +3 UTC.</strong></p>
+        <code> var dateOpen = {<br>
+            &nbsp;&nbsp;utc : <span class="red">180</span>, //<span class="blue">+UTC value in minutes</span><br>
+            &nbsp;&nbsp;year : <span class="red">2015</span>, //<span class="blue">full format YYYY</span><br>
+            &nbsp;&nbsp;month : <span class="red">1</span>, //<span class="blue">value from 1 to 12</span><br>
+            &nbsp;&nbsp;day : <span class="red">28</span>, //<span class="blue">value from 1 to 31</span><br>
+            &nbsp;&nbsp;hour : <span class="red">19</span>, //<span class="blue">value from 0 to 23</span><br>
+            &nbsp;&nbsp;minutes : <span class="red">40</span> //<span class="blue">value from 0 to 59</span><br>
+            };
+        </code>
+    </li>
+    <!--
+    <li><strong>Twitter.</strong>
+        <p>Use the search and find <strong>tweetUserName</strong> or <strong>tweetCount</strong> and enter your value.</p>
+
+        <p><strong>For example</strong></p>
+        <code> var tweetCount = <span class="red">10</span>; //number of recent messages<br> var tweetUserName = '<span class="red">envato</span>'; //twitter user name </code>
+    </li>
+    -->
+</ul>
+
+<p><a name="p14-3"></a></p>
+<h4>Contact Form. <a href="#top">Top</a></h4>
+<p>Please, open the <strong>contact-form.xml</strong> file in folder <strong>xml</strong>. Here you can change the messages and e-mail address.</p>
+<code>
+    &lt;?xml version="1.0" encoding="UTF-8" ?&gt;<br> &lt;contactform&gt;<br> &lt;recipient&gt;<span class="red">messages arrive at this e-mail</span>&lt;/recipient&gt;<br> &lt;email_agent&gt;<span class="red">from this address messages are sent</span>&lt;/email_agent&gt;<br> &lt;subject&gt;<span class="red">The title of the letter</span>&lt;/subject&gt;<br> &lt;messages&gt;<br> &nbsp;&nbsp;&lt;email_blank&gt;<span class="red">This field is required.</span>&lt;/email_blank&gt;<br> &nbsp;&nbsp;&lt;email_invalid&gt;<span class="red">Please enter a valid email address.</span>&lt;/email_invalid&gt;<br> &nbsp;&nbsp;&lt;name_blank&gt;<span class="red">This field is required.</span>&lt;/name_blank&gt;<br> &nbsp;&nbsp;&lt;message_blank&gt;<span class="red">This field is required.</span>&lt;/message_blank&gt;<br> &nbsp;&nbsp;&lt;error_fields&gt;<span class="red">Please, fill in all fields.</span>&lt;/error_fields&gt;<br> &nbsp;&nbsp;&lt;send_ok&gt;<span class="red">Thank you, your message has been sent.</span>&lt;/send_ok&gt;<br> &nbsp;&nbsp;&lt;send_error&gt;<span class="red">Error! Message is not sent!</span>&lt;/send_error&gt;<br> &lt;/messages&gt;<br> &lt;/contactform&gt;<br>
+</code>
+<p><span class="red">Important</span>. If you send a message, but it was not delivered, you need look the spam filter in your hosting or mail box. Some server block the email from site if the sender does not belong to a domain. For example site "mysite.com", sender "info@gmail.com" here domain "gmail.com".
+For this reason, I added the ability to specify a different address for the sender (you can create a box on your domain, then the letter will not fall into the spam)
+and receiver (you can specify any address). You can use one email address, but you must configure the spam filter.</p>
+
+<p><span class="red">Addition</span> information about <a href="#p2">Contacts</a> and <a href="#p5">Google Map</a>.</p>
+
+<a name="p14-4"></a>
+<h4>Subscribe Form. <a href="#top">Top</a></h4>
+<p>You need open the <strong>subscribe.xml</strong> file in the folder <strong>xml</strong>. You can change the message.</p>
+<code>
+    &lt;?xml version="1.0" encoding="UTF-8" ?&gt;<br> &lt;subscribe&gt;<br> &lt;messages&gt;<br> &lt;email_blank&gt;<span class="red">This field is required.</span>&lt;/email_blank&gt;<br> &lt;email_invalid><span class="red">Please enter a valid email address.</span>&lt;/email_invalid&gt;<br> &lt;success&gt;<span class="red">Thanks! for Joining us.</span>&lt;/success&gt;<br> &lt;error&gt;<span class="red">Subscribe error.</span>&lt;/error&gt;<br> &lt;/messages&gt;<br> &lt;/subscribe&gt;<br>
+</code>
+<a href="#p7">List of the subscribers.</a>
+
+<a name="p14-5"></a>
+<h4>How to change font-family. <a href="#top">Top</a></h4>
+<p>The first you need change Google Web Fonts collection. Please open <strong>index.html</strong> file use the search and find <strong>fonts.googleapis.com</strong></p>
+<code>
+    &lt;link rel="stylesheet" type="text/css" href='http://<strong>fonts.googleapis.com</strong>/css?family=<span class="red">Lobster+Two:400,400italic|Cabin|Ropa+Sans</span>' /&gt;
+</code>
+<p><strong>For example</strong>, change <span class="blue">Cabin</span> to <span class="blue">Dosis</span>.</p>
+<code>
+    &lt;link rel="stylesheet" type="text/css" href='http://<strong>fonts.googleapis.com</strong>/css?family=Lobster+Two:400,400italic|<span class="red">Dosis</span>|Ropa+Sans' /&gt;
+</code>
+<p>After that you have added font Dosis, now you need change font-family in the stylesheet. Please open file <strong>custom.css</strong> in the folder <strong>css</strong> use the search and find <strong>font-family: Cabin</strong>, change <strong>Cabin</strong> to <strong>Dosis</strong></p>
+<code>
+body,<br>
+.subscribe-wrap-input input,<br>
+.wrap-input	input,<br>
+.wrap-textarea textarea,<br>
+#jf_cf_submit {<br>
+    font-family: <span class="red">Dosis</span>, "Trebuchet MS", Arial, Helvetica, sans-serif;<br>
+}<br>
+</code>
+<p>
+    <strong class="red">Important</strong>. If the font name consists of 2 words or more, in the collection you need replace white space to the plus (example Lobster+Two) and in the stylesheet you need write the font name in quotes (example "Lobster Two").
+</p>
+<p><a href="https://developers.google.com/webfonts/docs/getting_started" target="_blank">Here you can find more information how to use google web fonts.</a></p>
+
+<p><a name="p11"></a></p>
+<h3>HTML5 Audio, Video in all major browsers and devices. <a href="#top">Top</a></h3>
+
+<p><a name="p11-1"></a></p>
+<h4>About library.<a href="#top">Top</a></h4>
+<p>This template uses the library <a href="http://mediaelementjs.com/" target="_blank">MediaElement.js</a> to get support tag &lt;audio&gt; and &lt;video&gt; in all major browsers and devices.</p>
+
+<p><strong>John Dyer, author library MediaElement.js says</strong></p>
+<blockquote>Instead of offering an HTML5 player to modern browsers and a totally separate Flash player to older browsers,
+    <a href="http://mediaelementjs.com/" target="_blank">MediaElement.js</a> upgrades them with custom Flash and Silverlight plugins that mimic the HTML5 MediaElement API. Magic happens, and then IE6-8 supports &lt;video&gt; and &lt;audio&gt;, Firefox and Opera support h.264, and Safari and IE9 support WebM (*if Adobe makes good on promises to support VP8 in Flash).
+</blockquote>
+<p>More about media formats <a href="https://developer.mozilla.org/en-US/docs/Media_formats_supported_by_the_audio_and_video_elements" target="_blank">Media formats supported by the HTML audio and video elements</a></p>
+
+<p><a name="p11-2"></a></p>
+<h4>Some Free Audio and Video Converters.<a href="#top">Top</a></h4>
+<ul>
+    <li><a href="http://audacity.sourceforge.net/" target="_blank">http://audacity.sourceforge.net/</a></li>
+    <li><a href="http://www.freemake.com/free_video_converter/" target="_blank">http://www.freemake.com/free_video_converter/</a></li>
+    <li><a href="http://www.mirovideoconverter.com/" target="_blank">http://www.mirovideoconverter.com/</a></li>
+    <li><a href="http://www.videolan.org/vlc/" target="_blank">http://www.videolan.org/vlc/</a></li>
+</ul>
+
+<p><a name="p11-3"></a></p>
+<h4>Installation. Setup MIME-types.<a href="#top">Top</a></h4>
+<p><span class="red">Important!</span> On <strong>Linux/Apache</strong> servers, create a filed called <strong>.htaccess</strong> with the following text and upload it to the root of your website</p>
+<code> AddType audio/mpeg .mp3<br> AddType audio/m4a .m4a<br> AddType audio/ogg .ogg<br> AddType audio/ogg .oga<br> AddType audio/webm .webma<br> AddType audio/wav .wav<br>
+    <br> AddType video/mp4 .mp4<br> AddType video/mp4 .m4v<br> AddType video/ogg .ogv<br> AddType video/webm .webm<br> AddType video/webm .webmv<br> </code>
+
+<p><span class="red">Important!</span> On <strong>Windows/IIS</strong> servers, pleaes follow Microsoft's instructions on how to add/edit MIME types on
+    <a href="http://www.microsoft.com/technet/prodtechnol/windowsserver2003/library/IIS/eb5556e2-f6e1-4871-b9ca-b8cf6f9c8134.mspx" target="_blank">IIS6</a> and <a href="http://technet.microsoft.com/en-us/library/cc725608%28v=ws.10%29.aspx" target="_blank">IIS7</a>.</p>
+
+<p><a name="p11-4"></a></p>
+<h4>How to activate Fullscreen Video Background. <a href="#top">Top</a></h4>
+
+<p>Please, open the <strong>index.html</strong> file. Find <span class="blue">&lt;!-- BEGIN #fullscreen-video --&gt;</span> or <span class="blue">&lt;!-- END #fullscreen-video --&gt;</span> and uncomment inner code between this blocks. After need delete the previous background code.</p>
+
+<p>Now you need enter your values. If you need loop the video add code <strong class="red">loop="loop"</strong> In the tag <strong>video</strong> and enter the value <strong>true</strong> of the
+    <strong>loopVideoPlayer </strong> (to find loopVideoPlayer , please, use the search and find loopVideoPlayer ). <strong>poster</strong> is the url to preview images while video loaded and for mobile phones. In the tag
+    <strong>source</strong> you need to specify path to the video file. To get full support in all major browsers and devices, you need to specify <strong>2 files</strong>.</p>
+
+<p>For <strong>video</strong></p>
+<ul>
+    <li>.ogv (codec OGG THEORA) <i>or</i> .webm (codec VP8)</li>
+    <li>.mp4 <span class="red">(important codec <strong>h.264</strong>)</span></li>
+</ul>
+<p><strong>For example</strong>.</p>
+<code> var loopVideoPlayer = <span class="red">true</span>; </code> <code>
+    &lt;div id="fullscreen-video"&gt;<br> &nbsp;&nbsp;&lt;div id="fullscreen-video-inner"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;video width="100%" height="100%" id="video-player"
+    <span class="red">loop="loop"</span> poster="<span class="red">pictures/1.jpg</span>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="<span class="red">video/Big_Buck_Bunny_Trailer.ogv</span>" /&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="<span class="red">video/Big_Buck_Bunny_Trailer.m4v</span>" /&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/video&gt;<br> &nbsp;&nbsp;&lt;/div&gt;<br> &lt;/div&gt;<br>
+</code>
+
+<p><a name="p11-5"></a></p>
+<h4>How to activate Music.<a href="#top">Top</a></h4>
+
+<p>Please, open the <strong>index.html</strong> file. Find <span class="blue">&lt;!-- BEGIN #audio-panel-wrap --&gt;</span> or <span class="blue">&lt;!-- END #audio-panel-wrap --&gt;</span> and uncomment inner code between this blocks.</p>
+
+<p>Now you need enter your values. If you need loop the music add code <strong class="red">loop="loop"</strong> In the tag <strong>audio</strong>. If you need automatically play the music after page load, you need enter <strong class="red">autoplay="autoplay"</strong> in the tag
+    <strong>audio</strong>. In the tag <strong>source</strong> you need to specify path to the audio file. To get full support in all major browsers and devices, you need to specify <strong>2 files</strong>.</p>
+
+<p>For <strong>audio</strong></p>
+<ul>
+    <li>.ogg (codec VORBIS)</li>
+    <li>.mp3 (codec MP3)</li>
+</ul>
+<p><strong>For example</strong>.</p>
+<code>
+    &lt;audio id="audio-player-1" controls="controls" <span class="red">autoplay="autoplay"</span>
+    <span class="red">loop="loop"</span> &gt;<br> &nbsp;&nbsp;&lt;source src="<span class="red">media/audio/adg3com_freeform.ogg</span>" /&gt;<br> &nbsp;&nbsp;&lt;source src="<span class="red">media/audio/adg3com_freeform.mp3</span>" /&gt;<br> &lt;/audio&gt;<br> </code>
+    <p>
+        <span class="red">Important!</span> Music only for live demo!!! Sorry, I am not music author, I don't have the extended licence for music, I don't have rule for this music. You can find many nice sound tracks on the <a href="http://audiojungle.net/" target="_blank">http://audiojungle.net/</a>
+    </p>
+
+<p><a name="p3"></a></p>
+
+<h3>Customizing Fullscreen Slider.<a href="#top">Top</a></h3>
+
+    <p class="red">
+        HTML and JavaScript code has already been added, you will need add code for slides. Please read next information.
+    </p>
+    <p>
+        You can set a few images that will be shown by turn in the center of the page as a background. If the image is larger than the display, then it gets smaller according to its smaller side. If the image is smaller than the display, then it gets larger according to its smaller side. <!-- You can add a pattern above. There is a control panel, you can stop or switch on the slide or switch to the next or previous one.-->
+    </p>
+
+    <p>
+        To add slides for slider, you need open the file <b>_variables.html</b> in the folder <b>js</b> and add this code for each slide at the end of code.
+    </p>
+<code>
+slides.push({
+    src : <span class="red">'pictures/background/theme-modern/01.jpg'</span>,
+    width : <span class="red">1400</span>,
+    height : <span class="red">850</span>
+});
+</code>
+    <p>
+        Important, you need enter the value for <b>src</b>, <b>width</b> and <b>height</b> for each slide.
+    </p>
+    <ul>
+        <li><b>src</b> - URL to the image,</li>
+        <li><b>width</b> - width of the image,</li>
+        <li><b>height</b> - height of the image.</li>
+    </ul>
+    <p><strong>Options</strong>.</p>
+    <p>
+        Additionally you can setup options for slider in the file <b>_variables.html</b> (you can use the search to find option).
+    </p>
+    <ul>
+        <li><b>slideDuration</b> - Duration for one slide, the time specified in milliseconds.</li>
+    </ul>
+    <p>
+        If you need <span class="red">delete</span> Full Screen Background, you need delete all <b>slides.push(...);</b>.
+    </p>
+
+
+<a name="p3-6"></a>
+<h3>Fullscreen YouTube. <a href="#top">Top</a></h3>
+<p>To activate this type of background, please, open the <strong>index.html</strong> file, use the search find <span class="blue"><nobr>&lt;!-- BEGIN #fullscreen-youtube --&gt;</nobr></span> and uncomment inner code to <span class="blue"><nobr>&lt;!-- END #fullscreen-youtube --&gt;</nobr></span>. After that you need delete the previous background code.
+</p>
+<p>To setup YouTube Background you need enter the Video ID and other data. Please use the search and find <strong>idYouTube</strong> in the <strong>index.html</strong> file.</p>
+
+<p><strong>For example</strong>.</p>
+<code> var idYouTube = '<span class="red">zbC6d0vQKew</span>';<br> var autoplayYouTube = <span class="red">1</span>;<br> var loopYouTube = <span class="red">1</span>;<br> var fullscreenType = <span class="red">1</span>;<br> </code>
+
+<p><strong>Options.</strong></p>
+<ul>
+    <li>idYouTube - YouTube Video ID. You can get Video ID from the url to the video. <br>Example http://www.youtube.com/watch?v=<span class="red">zbC6d0vQKew</span>.</li>
+    <li>autoplayYouTube - If you need automatically play the video after page load, please enter value <strong>1</strong>.</li>
+    <li>loopYouTube - If you need loop the video, please enter value <strong>1</strong>.</li>
+    <li>fullscreenType - Value <strong>1</strong> - fullscreen, Value <strong>2</strong> - video stretched by longer side.</li>
+</ul>
+
+<p><a name="p2"></a></p>
+
+<h3>Customizing About Us, Contact Us. <a href="#top">Top</a></h3>
+<p>To customize the information About Us, Portfolio, Contact Us, find the text <span class="blue">id="about-us-block"</span>, <span class="blue">id="portfolio-block"</span> or <span class="blue">id="contact-us-block"</span> in <strong>index.html</strong> file.</p>
+
+<p>The name is between the tags &lt;h1&gt;&lt;/h1&gt;. You can also change the information between the comment tags</p>
+<code>
+    &lt;!-- BEGIN – Enter your html --&gt;<br> ...<br> &lt;!-- END – Enter your html --&gt;
+</code>
+
+<p><a name="p4"></a></p>
+<h3>Updating portfolio. <a href="#top">Top</a></h3>
+
+<p>Find the beginning of the portfolio using the keyword <span class="blue">class="portfolio"</span>. Before or after the row <b>&lt;figure&gt;</b> ... <b>&lt;/figure&gt;</b> add a new code.</p>
+<h4>Example. Adding new work with a Big preview image and Description.</h4>
+<code>
+    &lt;figure&gt;<br> &nbsp;&nbsp;&lt;a href="<span class="red">path to a large image</span>" title="preview" rel="prettyPhoto[pp_one]"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="<span class="red">path to a small image</span>" /&gt;<br> &nbsp;&nbsp;&lt;/a&gt;<br> &nbsp;&nbsp;&lt;figcaption&gt;<span class="red">description</span> &lt;/figcaption&gt;<br> &lt;/figure>
+</code>
+<h4>Example. Adding new work, only Small image and Description.</h4>
+<code>
+    &lt;figure&gt;<br> &nbsp;&nbsp;&lt;img src="<span class="red">path to a small image</span>" /&gt;<br> &nbsp;&nbsp;&lt;figcaption&gt;<span class="red">description</span> &lt;/figcaption&gt;<br> &lt;/figure> </code>
+<h4>Example. Adding new work, only Small image.</h4>
+<code>
+    &lt;figure&gt;<br> &nbsp;&nbsp;&lt;img src="<span class="red">path to a small image</span>" /&gt;<br> &lt;/figure> </code>
+<h4>Remove work from the portfolio.</h4>
+
+<p>To remove the work from the portfolio, remove block &lt;<b>figure</b>&gt;...&lt;/<b>figure</b>&gt;.</p>
+
+<p><a name="p5"></a></p>
+
+<h3>Customizing Google Map. <a href="#top">Top</a></h3>
+
+<p>To show Google Map you need enter the zoom, latitude and longitude coordinates. Please use the search and find <strong>$googleMapsZoom</strong> or <strong>$googleMapsLat</strong> or <strong>$googleMapsLng</strong> in the <strong>index.html</strong> file.</p>
+
+<p><strong>For example</strong>.</p>
+<code> var $googleMapsZoom = <span class="red">12</span>;<br> var $googleMapsLat = <span class="red">43.6737156885</span>;<br> var $googleMapsLng = <span class="red">-79.3501482013</span>;<br> </code>
+
+<p><strong>Options</strong></p>
+<ul>
+    <li>$googleMapsZoom - Zoom</li>
+    <li>$googleMapsLat - Latitude</li>
+    <li>$googleMapsLng - Longitude</li>
+</ul>
+<p>Documentation from Google <a href="http://support.google.com/maps/bin/answer.py?hl=en&answer=18539&topic=1687353&ctx=topic" target="_blank">How to find the latitude and longitude</a>. It is very easy, only 3 steps.</p>
+
+<p><a name="p6"></a></p>
+<h3>Editing social network icons. <a href="#top">Top</a></h3>
+
+<p>There’re 24 ready-made social network icons. Use the search and find <span class="blue">&lt;!--BEGIN #social-icons --&gt;</span> in <strong>index.html</strong> file and uncomment the one you need. If you want to add a new icon, please edit CSS.</p>
+
+<p><a name="p7"></a></p>
+<h3>List of the subscribers. <a href="#top">Top</a></h3>
+<p>The root folder contains a <strong>subscribe-list.txt</strong> file, where all the subscribers’ emails are stored. Additionally you can read "<a href="#p14-4">Configuring the Subscribe form.</a>"</p>
+
+<p><a name="p12"></a></p>
+<h3>How to make a clock. <a href="#top">Top</a></h3>
+<p>Please, open <strong>index.html</strong> file use the search and find <strong>jquery.jf.countdown-1.1.0.js</strong> and replace word <strong>countdown</strong> to the <strong>clock</strong></p>
+<p><strong>Result</strong></p>
+<code>
+    &lt;script type="text/javascript" src="js/jquery.jf.<span class="red">clock</span>-1.1.0.js"&gt;&lt;/script&gt;
+</code>
+
+<p><a name="p15"></a></p>
+<h3>How to remove the countdown block? <a href="#top">Top</a></h3>
+<p>Please open <strong>index.html</strong> file, use the search and find <strong>&lt;!-- BEGIN #countdown --&gt;</strong>. After then delete all code from <strong>&lt;!-- BEGIN #countdown --&gt;</strong> to <strong>&lt;!-- END #countdown --&gt;</strong></p>
+<p>To finish, you need open the file <strong>main.js</strong> in the folder <strong>js</strong> find <strong>$.jfCountdown</strong> and delete this line.</p>
+
+
+<p><a name="p8"></a></p>
+<h3>Sources and Credits. <a href="#top">Top</a></h3>
+<p>I've used the following icons, images or other files as listed.</p>
+<ul>
+    <li><a href="http://www.flickr.com/photos/dexxus" target="_blank">Photos by Paul Bica.</a> Awesome images ONLY FOR LIVE DEMO.</li>
+    <li><a href="http://jquery.com/" target="_blank">jQuery library</a></li>
+    <!--
+    <li><a href="http://tweet.seaofclouds.com/" target="_blank">jQuery Tweet from seaofclouds</a></li>
+    -->
+    <li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">prettyPhoto - jQuery plagin</a></li>
+    <li><a href="http://www.iconsweets2.com/" target="_blank">IconSweet2 Basic Icon Set</a></li>
+    <li><a href="http://www.google.com/webfonts#UsePlace:use/Collection:Lobster+Two:400,400italic|Cabin|Ropa+Sans" target="_blank">Collection Google Fonts</a> "Lobster Two" by <a href="https://plus.google.com/114391601624281927771/posts">Pablo Impallari</a>, "Cabin" by
+        <a href="https://plus.google.com/114391601624281927771/posts">Pablo Impallari</a>, "Ropa Sans" by Botio Nikoltchev</li>
+    <li><a href="http://subtlepatterns.com/" target="_blank">Patterns</a></li>
+    <li><a href="http://audiojungle.net/user/ADG3studios/portfolio" target="_blank">Music by ADG3studios.</a> ONLY FOR LIVE DEMO.</li>
+</ul>
+
+<p><a name="p9"></a></p>
+<h3>Support. <a href="#top">Top</a></h3>
+<p>Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please send me an email using the contact form on my user page
+    <a href="http://wwww.themeforest.com/user/JFthemes" target="_blank">JFthemes</a>. Please include the theme name, website URL and detailed information about your problem. I will write a response as quickly as possible (Usually get back to you within 24 hours in working days. I am based in the Europe (GMT) so please be aware of any time difference.).
+</p>
+
+<div class="ps">If you like my template, please take a minute to rate it and leave your comment. Thank you :)</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ 19 September 2013 version 2.3.0
+ - Updated Full Screen Slider.
+
+ 28 June 2013 version 2.2.0
+ - Removed Twitter feed.
